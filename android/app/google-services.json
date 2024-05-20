@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "***REMOVED***",
+    "project_id": "mschat-bccb0",
+    "storage_bucket": "mschat-bccb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "***REMOVED***",
+        "android_client_info": {
+          "package_name": "com.msayeh.chat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "***REMOVED***"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
