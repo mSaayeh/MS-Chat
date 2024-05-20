@@ -2,13 +2,6 @@
 
 MS Chat is a Flutter-based chat application that provides a simple and efficient platform for real-time messaging with authentication using Firebase. The app supports a single public chat room where users can log in, sign up, and exchange messages.
 
-## Features
-
-- **Firebase Authentication:** Users can create an account or log in using their email address and password.
-- **Firestore Integration:** Messages are stored and retrieved in real-time from Firestore.
-- **Real-time Messaging:** Utilizes Firestore Streams to update messages in real-time.
-- **User Interface:** Simple and user-friendly UI for seamless chatting experience.
-
 ## Screenshots
 
 <p align="center">
@@ -17,6 +10,13 @@ MS Chat is a Flutter-based chat application that provides a simple and efficient
   <img src="screenshots/messages_empty.png" alt="Place Details" width="200"/>
   <img src="screenshots/messages.png" alt="Edit Place" width="200"/>
 </p>
+
+## Features
+
+- **Firebase Authentication:** Users can create an account or log in using their email address and password.
+- **Firestore Integration:** Messages are stored and retrieved in real-time from Firestore.
+- **Real-time Messaging:** Utilizes Firestore Streams to update messages in real-time.
+- **User Interface:** Simple and user-friendly UI for seamless chatting experience.
 
 ## How to Use
 
