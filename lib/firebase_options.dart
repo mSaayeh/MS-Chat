@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -49,21 +50,20 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: '***REMOVED***',
-    appId: '***REMOVED***',
-    messagingSenderId: '***REMOVED***',
+  static FirebaseOptions android = FirebaseOptions(
+    apiKey: dotenv.env['ANDROID_API'].toString(),
+    appId: dotenv.env['ANDROID_APP_ID'].toString(),
+    messagingSenderId: dotenv.env['ANDROID_SENDER_ID'].toString(),
     projectId: 'mschat-bccb0',
     storageBucket: 'mschat-bccb0.appspot.com',
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: '***REMOVED***',
-    appId: '1:***REMOVED***:ios:02b4da7ab786638a909408',
-    messagingSenderId: '***REMOVED***',
+  static FirebaseOptions ios = FirebaseOptions(
+    apiKey: dotenv.env['IOS_API'].toString(),
+    appId: dotenv.env['IOS_APP_ID'].toString(),
+    messagingSenderId: dotenv.env['SENDER_ID'].toString(),
     projectId: 'mschat-bccb0',
     storageBucket: 'mschat-bccb0.appspot.com',
     iosBundleId: 'com.msayeh.chatApp',
   );
-
 }
